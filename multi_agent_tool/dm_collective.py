@@ -314,7 +314,7 @@ def _determine_session_phase(session_log: List[Dict]) -> str:
         return "rising_action"
 
 def initialize_dm_session(campaign_name: str = "New Campaign",
-                         party_info: Dict[str, Any] = None) -> DMCollectiveSession:
+                         party_info: Optional[Dict[str, Any]] = None) -> DMCollectiveSession:
     """Initialize a new DM session with the AI-DM Collective."""
     
     session = DMCollectiveSession()
@@ -365,5 +365,5 @@ Always prioritize:
 - Engaging, dynamic storytelling
 
 Your goal is to provide an experience that rivals the best human Dungeon Masters through the coordinated expertise of your specialist agents.""",
-    tools=[initialize_dm_session, process_player_input]
+    tools=[]
 )

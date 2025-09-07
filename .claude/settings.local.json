@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:google.github.io)",
+      "Bash(.venv/bin/pip install:*)",
+      "Bash(.venv/bin/adk run:*)",
+      "Bash(.venv/bin/adk:*)",
+      "Bash(pkill:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

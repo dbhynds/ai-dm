@@ -5,7 +5,9 @@
       "Bash(.venv/bin/pip install:*)",
       "Bash(.venv/bin/adk run:*)",
       "Bash(.venv/bin/adk:*)",
-      "Bash(pkill:*)"
+      "Bash(pkill:*)",
+      "Bash(source:*)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []
